@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:kurimochi.netlify.app",
+  "verificationMethod": [
+    {
+      "id": "did:web:kurimochi.netlify.app#keys-1",
+      "controller": "did:web:kurimochi.netlify.app",
+      "type": "EcdsaSecp256k1Signature2019",
+      "publicKeyMultibase": "zQ3shNkGgbWX2ByxgHeR5ggTSHkdpSCs4wMdmyDSPdrYrC9rx"
+    }
+  ],
+  "assertionMethod": [
+    "did:web:kurimochi.netlify.app#keys-1"
+  ],
+  "service": [
+    {
+      "id": "did:web:kurimochi.netlify.app#linked-domain",
+      "type": "LinkedDomains",
+      "serviceEndpoint": "https://kurimochi.netlify.app"
+    }
+  ]
+}
